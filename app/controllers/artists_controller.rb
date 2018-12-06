@@ -1,5 +1,5 @@
-class ArtistsController < ApplicationController
-  before_action :set_artist, only: [:show, :update, :destroy]
+class ArtistsController < ProtectedController
+  before_action :set_artist, only: %i[show update destroy]
 
   # GET /artists
   def index
@@ -15,7 +15,7 @@ class ArtistsController < ApplicationController
 
   # POST /artists
   def create
-    @artist = Artist.new(artist_params)
+    @artist = current_user.artists.build(artist_params)
 
     if @artist.save
       render json: @artist, status: :created, location: @artist
@@ -41,7 +41,7 @@ class ArtistsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_artist
-      @artist = Artist.find(params[:id])
+      @artist = current_user.artists.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
