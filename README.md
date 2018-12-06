@@ -1,1 +1,1 @@
-# Lucas' Music Streaming App
+# Lucas' Music Streaming App (API)
