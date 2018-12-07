@@ -2,7 +2,7 @@
 
 curl "http://localhost:4741/artists/${ID}" \
   --include \
-  --request DELETE \
+  --request GET \
   --header "Authorization: Token token=${TOKEN}"
 
 echo
