@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class ArtistsController < ProtectedController
   before_action :set_artist, only: %i[show update destroy]
+  attr_reader :current_user
 
   # GET /artists
   def index
