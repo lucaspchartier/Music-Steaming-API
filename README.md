@@ -3,5 +3,8 @@
 # Links
 
 * [Music Streaming Client](https://github.com/lucaspchartier/Music-Streaming-Client/)
-* [Heroku](https://salty-wave-91914.herokuapp.com/)
 * [Deployed Site](https://lucaspchartier.github.io/Music-Streaming-Client/)
+
+# Entity Relationship Diagrams
+
+* [Entity Relationship Diagrams](https://i.imgur.com/x1LTN0K.jpg)
