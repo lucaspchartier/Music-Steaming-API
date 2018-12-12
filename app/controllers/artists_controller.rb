@@ -6,7 +6,7 @@ class ArtistsController < ProtectedController
 
   # GET /artists
   def index
-    @artists = Artist.all
+    @artists = current_user.artists
 
     render json: @artists
   end
