@@ -6,7 +6,7 @@ class ArtistsController < ProtectedController
 
   # GET /artists
   def index
-    @artists = current_user.artists
+    @artists = current_user.artists.order(id: :asc)
 
     render json: @artists
   end
