@@ -26,7 +26,7 @@ class ReleasesController < ProtectedController
 
   # DELETE /releases/1
   def destroy
-    @release = current_user.releases.find(params[:release_id])
+    @release = current_user.releases.find(params[:id])
 
     @release.destroy
   end
