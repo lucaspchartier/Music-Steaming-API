@@ -35,11 +35,11 @@ class ReleasesController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_release
-    @release = current_user.artists.find(params[:release][:artist_id]).build(release_params)
+    @release = current_user.artists.find(params[:release][:artist_id]).releases.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
   def release_params
-    params.require(:release).permit(:title, :year_released, :number_of_tracks)
+    params.require(:release).permit(:artist_id, :title, :year_released, :number_of_tracks)
   end
 end
