@@ -1,4 +1,4 @@
-<% project_name = 'music-streaming-app' %>
+<% project_name = 'music-database-app' %>
 
 default: &default
   adapter: postgresql

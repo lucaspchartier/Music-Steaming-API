@@ -1,14 +1,14 @@
-# Lucas' Music Streaming App (API)
+# Music Database App (API)
 
 # How it works
 
-### Once the user signs in, the user can add, display, update, and remove artists of his or her choosing. Similar to Spotify and other similar music streaming apps, the user can build his or her library with a wide variety of artists and customize it to their liking.
+### Once the user signs in, the user can add, display, update, and remove artists of his or her choosing. Similar to Spotify and other similar music apps, the user can build his or her library with a wide variety of artists and customize it to their liking.
 
 # Links
 
-* [Music Streaming Client](https://github.com/lucaspchartier/Music-Streaming-Client/)
+* [Music Database Client](https://github.com/lucaspchartier/Music-Database-Client/)
 * [Heroku](https://salty-wave-91914.herokuapp.com/)
-* [Deployed Site](https://lucaspchartier.github.io/Music-Streaming-Client/)
+* [Deployed Site](https://lucaspchartier.github.io/Music-Database-Client/)
 
 # Entity Relationship Diagrams
 
